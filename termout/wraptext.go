@@ -1,7 +1,9 @@
 package termout
 
+// Helpers to wrap text to terminal width
 import "strings"
 
+// Wrap a line of text.
 func wrapLine(line string, width int) string {
 	words := strings.Fields(line)
 	var result strings.Builder
@@ -22,6 +24,7 @@ func wrapLine(line string, width int) string {
 	return result.String()
 }
 
+// Wrap Lines of text.
 func wrapTextPreservingNewlines(text string, width int) string {
 	lines := strings.Split(text, "\n")
 	var result strings.Builder

@@ -9,11 +9,14 @@ import (
 	"os"
 )
 
+// Enforced required terminal width
 const (
 	minWidth  = 105
 	minHeight = 30
 )
 
+// Generates the reading, if rubues is true will exit if that is the first mother.  Will connect to the Gemini AP for
+// interpretation if planet parameter is something other then None.
 func Cmd(planet string, rubeus bool) error {
 	width, height, err := term.GetSize(int(os.Stdout.Fd()))
 
