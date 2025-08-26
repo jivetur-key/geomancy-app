@@ -18,13 +18,10 @@ func Cmd(planet string, rubeus bool) error {
 	width, height, err := term.GetSize(int(os.Stdout.Fd()))
 
 	if err != nil {
-		return fmt.Errorf("Error getting terminal size:", err)
+		return fmt.Errorf("Error getting terminal size: %v.", err)
 
 	}
 	if width < minWidth || height < minHeight {
-		fmt.Printf("Error terminal must have at least a width of %d and a height of %d\n",
-			minWidth, minHeight)
-		fmt.Printf("Current width: %d current height: %d\n", width, height)
 		return fmt.Errorf("Error terminal must have at least a width of %d and a height of %d\nCurrent width: %d"+
 			"current height: %d\n", minWidth, minHeight, width, height)
 	}
