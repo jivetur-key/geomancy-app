@@ -3,10 +3,13 @@
 Geomancer App is a command-line tool for casting and interpreting traditional geomantic shield charts. It renders readings directly in your UTF-8 compatible terminal, combining classical symbolism with modern clarity. Interpretations are optionally enhanced through Gemini, drawing on planetary influences and age-old questions to illuminate each figure’s meaning
 
 # Example Output
+
+   Windows Powershell
 ![Powershell )utput](docs/powershell.png)
-- Windows Powershell
+
+   Linux Bash
 ![Bash Output](docs/bashpng.png)
-- Linux Bash
+
 ## API Usage
 
 This project uses the Google Gemini API for generating interpretations. To run this application, you will need your own API key.
