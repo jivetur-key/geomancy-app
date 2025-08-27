@@ -20,7 +20,7 @@ Clone the repo and build:
 
 ```sh
 git clone https://github.com/jivetur-key/geomancy-app.git
-cd geomancer-app
+cd geomancy-app
 make
 
 # Usage
