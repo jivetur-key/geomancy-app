@@ -18,8 +18,14 @@ This project uses the Google Gemini API for generating interpretations. To run t
 2. Set an evironment variable before running the application.
 3. Set the GEMINI_API_KEY environment variable.
 
+- On Unix like systems
+```sh
 export GEMINI_API_KEY="YOUR_API_KEY"
-
+```
+- On Windows
+```sh
+$env:GEMINI_API_KEY = "YOUR_API_KEY"
+```
 Note: Your use of the Gemini API is subject to the Google Generative AI API Terms of Service.
 
 # Installation
@@ -34,6 +40,8 @@ make
 ```
 - On Windows
 ```sh
+git clone https://github.com/jivetur-key/geomancy-app.git
+cd geomancy-app
 go build -o geomancer.exe .\main.go
 ```
 
