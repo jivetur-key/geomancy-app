@@ -24,7 +24,6 @@ cd geomancer-app
 make
 
 # Usage
-```sh
 ./geomancer
 ./geomancer -planet sun
 
