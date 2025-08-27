@@ -4,8 +4,9 @@ Geomancer App is a command-line tool for casting and interpreting traditional ge
 
 # Example Output
 ![Powershell )utput](docs/powershell.png)
+- Windows Powershell
 ![Bash Output](docs/bashpng.png)
-
+- Linux Bash
 ## API Usage
 
 This project uses the Google Gemini API for generating interpretations. To run this application, you will need your own API key.
@@ -22,12 +23,22 @@ Note: Your use of the Gemini API is subject to the Google Generative AI API Term
 
 Clone the repo and build:
 
+- On Unix like systems
 ```sh
 git clone https://github.com/jivetur-key/geomancy-app.git
 cd geomancy-app
 make
+```
+- On Windows
+```sh
+go build -o geomancer.exe .\main.go
+```
 
 # Usage
+- invoking the application without any arguments generates and displays a shield reading
+- For interpretation through gemini add the -planet switch with the name of the planet the question is related to.
+
+```sh
 ./geomancer
 ./geomancer -planet sun
-
+```
