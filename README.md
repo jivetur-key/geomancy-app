@@ -1,6 +1,10 @@
 # geomancy-app
 
-A command-line geomancy engine for generating and interpreting traditional shield readings.
+Geomancer App is a command-line tool for casting and interpreting traditional geomantic shield charts. It renders readings directly in your UTF-8 compatible terminal, combining classical symbolism with modern clarity. Interpretations are optionally enhanced through Gemini, drawing on planetary influences and age-old questions to illuminate each figure’s meaning
+
+# Example Output
+![Powershell )utput](docs/powershell.png)
+![Bash Output](docs/bashpng.png)
 
 ## API Usage
 
